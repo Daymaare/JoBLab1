@@ -5,7 +5,7 @@
  # Skapa wrapper som anropar PowerShell
  @"
 #!/bin/sh
-pwsh.exe -NoProfile -ExecutionPolicy Bypass -File "`${GIT_DIR}/hooks/pre-commit.ps1"
+pwsh.exe -NoProfile -ExecutionPolicy Bypass -File ".git/hooks/pre-commit.ps1"
 exit
 "@ | Out-File -FilePath "$hookPath/pre-commit" -Encoding ASCII -NoNewline
  Write-Host "Git hooks har installerats!" -ForegroundColor Green
