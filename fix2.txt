@@ -1,0 +1,47 @@
+
+1. git init Lab1
+  
+2. skapade en textfil som heter README.md med innehåll:
+   duck
+   moose
+   cat
+   
+3. git add README.md
+   git commit -m "Initial commit"
+   
+4. git branch feature1
+   git checkout feature1
+   
+5. Lade till dog och ändrade moose till mouse i textfilen
+   git add README.md
+   git commit -m "add dog, change moose to mouse"
+   
+6. git checkout main
+   ändrade moose till mahmut i textfilen
+   git commit -m "change moose to mahmut"
+   
+7. git merge feature1
+   redigerade filen så att endast djurnamn finns kvar
+   git add README.md
+   git commit -m "merging"
+   
+8. git tag extinct 562b7de
+
+9. git reset --hard 1626cec
+
+10. git branch feature2
+
+11. ändrade första bokstaven på djuren till stor bokstav
+    git add README.md
+	git commit -m "First letter big"
+	
+12. Out-File -FilePath "fix1.txt"
+    git add fix1.txt
+	git commit -m "add fix1.txt"
+	Out-File -FilePath "fix2.txt"
+    git add fix2.txt
+	git commit -m "add fix2.txt"
+
+13. git checkout main
+
+14. git cherry-pick 9fd3bad
